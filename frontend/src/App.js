@@ -1,12 +1,9 @@
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-
-import HomeScreen from "./pages/home/HomeScreen";
+import { Outlet } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 
-import "./assets/styles/bootstrap.custom.css";
-import "./assets/styles/index.css";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
 
 function App() {
   return (
@@ -14,7 +11,7 @@ function App() {
       <Header />
       <main className="py-3">
         <Container>
-          <HomeScreen />
+          <Outlet />
         </Container>
       </main>
       <Footer />
