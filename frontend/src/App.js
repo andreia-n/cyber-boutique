@@ -3,6 +3,9 @@ import Header from "./components/header/Header";
 
 import { Container } from "react-bootstrap";
 
+import './assets/styles/index.css'
+import "./assets/styles/bootstrap.custom.css"
+
 function App() {
   return (
     <>
